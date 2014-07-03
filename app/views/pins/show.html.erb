@@ -19,10 +19,13 @@
 			<!--<p id="notice"><%= notice %></p>-->
 			<div class="panel-body center">
 					<%= image_tag @pin.image.url(:medium) %>
+					<br>
 				<p>
 					<strong>Description:</strong>
 					<%= @pin.description %>
 				</p>
+				<p>
+					Posted by <strong><%= @pin.user.name if @pin.user %></strong></p>
 			</div>
 		</div>
 	</div>
